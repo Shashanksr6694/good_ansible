@@ -21,7 +21,7 @@
 
 - name: setup database deployment
   hosts: appdbs
-  gather_facts: false
+  gather_facts: true
   become: yes
   roles:
      - geerlingguy.postgresql
