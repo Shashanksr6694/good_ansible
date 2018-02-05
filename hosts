@@ -1,13 +1,3 @@
-[3tierapp:vars]
-
-###########################################################################
-### Ansible Vars
-###########################################################################
-timeout=60
-ansible_become=yes
-ansible_ssh_user=ec2-user
-ansible_ssh_private_key_file="~/.ssh/b740key.pem"
-ansible_ssh_common_args="-o StrictHostKeyChecking=no"
 [3tierapp:children]
 frontends
 apps
